@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drug Detection System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <div class="sidebar-buttons">
+        <button id="dashboardBtn" class="active">Dashboard</button>
+        <button id="alertsBtn">Alerts</button>
+        <button id="settingsBtn">Settings</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-panel">
+      <h1>Drug Detection System</h1>
+      <section class="network-section">
+        <h2>Suspicious Users/Groups</h2>
+        <div class="network-diagram">
+          <div class="node central">Suspicious User</div>
+          <div class="node high">User A</div>
+          <div class="node medium">Group B</div>
+          <div class="node low">User C</div>
+          <div class="node low">Group D</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Right Panel -->
+    <aside class="right-panel">
+      <section class="list-section">
+        <h2>Suspicious Users/Groups List</h2>
+        <ul>
+          <li>User A – <span class="level high">High</span></li>
+          <li>Group B – <span class="level medium">Medium</span></li>
+          <li>User C – <span class="level low">Low</span></li>
+          <li>Group D – <span class="level low">Low</span></li>
+        </ul>
+      </section>
+      <section class="alerts-section">
+        <h2>Alerts Panel</h2>
+        <ul>
+          <li>Suspicious activity detected for User F</li>
+          <li>Group G flagged for suspicious behavior</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
